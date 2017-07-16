@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow" viewBox="0 0 1792 1792">
+    <path d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10L407 759q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/>
+</symbol><symbol id="icon-burger" viewBox="0 0 24 24">
+    <title/>
+    <g fill-rule="evenodd">
+        <path d="M1.5 6c-.276 0-.5.214-.5.505v.99c0 .279.218.505.5.505h21c.276 0 .5-.214.5-.505v-.99A.499.499 0 0 0 22.5 6h-21zm0 5c-.276 0-.5.214-.5.505v.99c0 .279.218.505.5.505h21c.276 0 .5-.214.5-.505v-.99a.499.499 0 0 0-.5-.505h-21zm0 5c-.276 0-.5.214-.5.505v.99c0 .279.218.505.5.505h21c.276 0 .5-.214.5-.505v-.99a.499.499 0 0 0-.5-.505h-21z"/>
+    </g>
+</symbol></svg>

@@ -1,0 +1,15 @@
+@keyframes scroll
+	50%
+		transform: translateY(50%)
+
+@keyframes ripple
+	from
+		transform: scale(0)
+	to
+		transform: scale(2.5)
+		opacity: 0
+
+.ripple
+	border-radius: 50%
+	position: absolute
+	animation: ripple 0.7s linear
