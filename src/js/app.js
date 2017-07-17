@@ -1,5 +1,6 @@
 import sayHello from './lib/sayHello.js';
 import './ripple.js';
+import './tabs.js';
 
 sayHello();
 

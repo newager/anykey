@@ -1,0 +1,33 @@
+.bms
+	&__boxes
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+.box
+	width: 23%
+	padding: 20px 20px 30px 20px
+	background-color: $white
+	border: 1px solid transparentize($violet, .8)
+	border-radius: 4px
+	box-shadow: 0 0 10px rgba(0,0,0,.1)
+	+trans(transform)
+	&:hover
+		transform: translate(0, -5px)
+		box-shadow: 0 5px 20px rgba(0,0,0,.3)
+		border-color: transparentize($yellow, .5)
+	&__logo
+		width: 90%
+		min-height: 80px
+		margin: 0 auto 20px
+		position: relative
+		
+		img
+			max-width: 100%
+			+vcenter
+			display: block
+
+	&__title
+		color: $violet
+		margin-bottom: 20px
+			
+
