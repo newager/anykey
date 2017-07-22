@@ -1,0 +1,92 @@
+.work
+	&__list
+		position: relative
+		// &:before, &:after
+		// 	content: ""
+		// 	position: absolute
+		// 	left: 50%
+		// 	transform: translate(-50%, 0)
+		// 	display: block
+		// 	width: 18px
+		// 	height: 18px
+		// 	border-radius: 50%
+		// &:before
+		// 	top: 0
+		// 	background-color: #310a3f
+		// &:after
+		// 	bottom: 0
+		// 	background-color: #5d2074
+
+.timeline
+	position: relative
+	padding: 50px 0
+	//+counter(1, " ")
+	+clr
+	.box
+		width: 80%
+		margin: 0 auto
+		&:hover
+			transform: none
+	// &:before
+	// 	content: ""
+	// 	display: block
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 50%
+	// 	transform: translate(-50%, 0)
+	// 	width: 3px
+	// 	height: 100%
+	// 	background: $gradient-lines
+	&__item
+		width: 50%
+		position: relative
+		.icon-arrow-drawn
+			width: 300px
+			height: 100px
+			position: absolute
+			bottom: -90%
+			left: -15%
+		// &:before
+		// 	position: absolute
+		// 	//top: 0
+		// 	top: 50%
+		// 	transform: translate(0, -50%)
+		// 	font-size: 72px
+		// 	color: transparentize($violet, .8)
+		// &:hover
+		// 	&:before
+		// 		color: transparentize($yellow, .4)
+		// 	&:after
+				//background: $gradient-border
+		// &:after
+		// 	content: ""
+		// 	display: block
+		// 	height: 3px
+		// 	width: 20%
+		// 	background: $gradient-lines
+		// 	position: absolute
+		// 	top: 50%
+		// 	transform: translate(0, -50%)
+		&:nth-child(even)
+			float: left
+			margin-top: 120px
+			clear: left
+			// &:before
+			// 	left: 20px
+			// &:after
+			// 	right: 0
+			.box
+				margin-left: 0
+		&:nth-child(odd)
+			float: right
+			margin-bottom: 120px
+			clear: right
+			// &:before
+			// 	left: calc(20% + 20px)
+			// &:after
+			// 	left: 0
+			.box
+				margin-right: 0
+		h3
+			color: $violet
+			letter-spacing: 0.2px

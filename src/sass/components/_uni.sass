@@ -1,0 +1,73 @@
+.uni
+	&__in
+		margin-bottom: 30px
+	&__info
+		float: left
+		width: 50%
+	&__text
+		margin-bottom: 40px
+		p
+			line-height: 1.8
+			margin-bottom: 15px
+	&__pic
+		overflow: hidden
+		width: 50%
+		img
+			max-width: 68%
+			display: block
+			margin-left: auto
+	&__message
+		p
+			font-size: 18px
+			a
+				color: $violet
+				font-weight: 600
+				text-decoration: none
+				letter-spacing: 0.2px
+				+trans
+				&:hover, &:active
+					opacity: .8
+
+.points
+	+counter(1, " ")
+	li
+		position: relative
+		padding-left: 50px
+		min-height: 50px
+		width: 100%
+		display: table
+		margin-bottom: 10px
+		span
+			display: table-cell
+			vertical-align: middle
+			font-size: 16px
+			font-weight: 600
+			color: $gray
+		&:before
+			line-height: 40px
+			text-align: center
+			display: block
+			position: absolute
+			top: 50%
+			left: 2px
+			transform: translate(0, -50%)
+			width: 36px
+			height: 36px
+			border-radius: 50%
+			background-color: #fff
+			color: $mango
+			font-size: 18px
+			font-weight: 500
+		&:after
+			content: ""
+			width: 40px
+			height: 40px
+			display: block
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			left: 0
+			background: $gradient-border
+			border-radius: 50%
+			z-index: -1
+		

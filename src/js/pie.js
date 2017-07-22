@@ -24,14 +24,6 @@ export default function chart() {
 					}
 				}
 
-				var percent = $(this).data('percent');
-				$(self).parent().append('<div class="js-percent">' + percent + '</div>');
-				$('.js-percent').css({
-					position: 'absolute',
-					top: 0,
-					left: 0
-				});
-
 			});
 
 			fraction.on('mouseleave', function(e) {
