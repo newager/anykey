@@ -36,34 +36,39 @@
 			
 			
 
-.adv-list
-	background: $violet
-	color: $white
-	width: 30%
-	padding: 20px 30px
-	min-height: 100%
-	h4
-		font-size: 26px
-		text-align: center
-		font-weight: 500
-		letter-spacing: 0.5px
-		margin-bottom: 20px
-		color: $yellow
-	ul
-		li
-			position: relative
-			padding-left: 35px
+.adv
+	&__chart
+		width: 35%
+		padding: 20px
+		position: relative
+	&__list
+		background: $violet
+		color: $white
+		width: 30%
+		padding: 20px 30px
+		min-height: 100%
+		h4
+			font-size: 26px
+			text-align: center
+			font-weight: 500
+			letter-spacing: 0.5px
 			margin-bottom: 20px
-			&:before
-				content: ""
-				display: block
-				position: absolute
-				top: 5px
-				left: 0
-				width: 12px
-				height: 12px
-				+cover
-				background-image: url("data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSIyNHB4IiBpZD0iTGF5ZXJfMSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS42NTIsMy4yMTFjLTAuMjkzLTAuMjk1LTAuNzctMC4yOTUtMS4wNjEsMEw5LjQxLDE0LjM0ICBjLTAuMjkzLDAuMjk3LTAuNzcxLDAuMjk3LTEuMDYyLDBMMy40NDksOS4zNTFDMy4zMDQsOS4yMDMsMy4xMTQsOS4xMywyLjkyMyw5LjEyOUMyLjczLDkuMTI4LDIuNTM0LDkuMjAxLDIuMzg3LDkuMzUxICBsLTIuMTY1LDEuOTQ2QzAuMDc4LDExLjQ0NSwwLDExLjYzLDAsMTEuODIzYzAsMC4xOTQsMC4wNzgsMC4zOTcsMC4yMjMsMC41NDRsNC45NCw1LjE4NGMwLjI5MiwwLjI5NiwwLjc3MSwwLjc3NiwxLjA2MiwxLjA3ICBsMi4xMjQsMi4xNDFjMC4yOTIsMC4yOTMsMC43NjksMC4yOTMsMS4wNjIsMGwxNC4zNjYtMTQuMzRjMC4yOTMtMC4yOTQsMC4yOTMtMC43NzcsMC0xLjA3MUwyMS42NTIsMy4yMTF6IiBmaWxsPSIjZjJmMmYyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=")
+			color: $yellow
+		ul
+			li
+				position: relative
+				padding-left: 35px
+				margin-bottom: 20px
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					top: 5px
+					left: 0
+					width: 12px
+					height: 12px
+					+cover
+					background-image: url("data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSIyNHB4IiBpZD0iTGF5ZXJfMSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS42NTIsMy4yMTFjLTAuMjkzLTAuMjk1LTAuNzctMC4yOTUtMS4wNjEsMEw5LjQxLDE0LjM0ICBjLTAuMjkzLDAuMjk3LTAuNzcxLDAuMjk3LTEuMDYyLDBMMy40NDksOS4zNTFDMy4zMDQsOS4yMDMsMy4xMTQsOS4xMywyLjkyMyw5LjEyOUMyLjczLDkuMTI4LDIuNTM0LDkuMjAxLDIuMzg3LDkuMzUxICBsLTIuMTY1LDEuOTQ2QzAuMDc4LDExLjQ0NSwwLDExLjYzLDAsMTEuODIzYzAsMC4xOTQsMC4wNzgsMC4zOTcsMC4yMjMsMC41NDRsNC45NCw1LjE4NGMwLjI5MiwwLjI5NiwwLjc3MSwwLjc3NiwxLjA2MiwxLjA3ICBsMi4xMjQsMi4xNDFjMC4yOTIsMC4yOTMsMC43NjksMC4yOTMsMS4wNjIsMGwxNC4zNjYtMTQuMzRjMC4yOTMtMC4yOTQsMC4yOTMtMC43NzcsMC0xLjA3MUwyMS42NTIsMy4yMTF6IiBmaWxsPSIjZjJmMmYyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=")
 
 
 			

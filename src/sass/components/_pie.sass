@@ -1,8 +1,37 @@
 .pie
 	svg
 		display: block
-		width: 100%
+		overflow: hidden
+		width: 80%
+		margin: 0 auto
+		filter: drop-shadow(0 5px 10px rgba(0,0,0,.2))
 		path
 			+trans
 		path:hover
 			transform: scale(1.1)
+			filter: drop-shadow(0 5px 20px rgba(0,0,0,.5))
+.legend
+	font-size: 0
+	padding-top: 40px
+	li
+		width: 48%
+		position: relative
+		padding-left: 25px
+		display: inline-block
+		vertical-align: top
+		margin: 0 1%
+		margin-bottom: 10px
+		&.is-bold
+			font-weight: 600
+		span
+			font-size: 14px
+		div
+			display: block
+			position: absolute
+			top: 3px
+			left: 0
+			border-radius: 50%
+			width: 12px
+			height: 12px
+			background-color: #000
+		

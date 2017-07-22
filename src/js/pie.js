@@ -8,8 +8,63 @@ export default function chart() {
 			createChart({
 				chart: $(this)
 			});
+			createLegend({
+				chart: $(this)
+			});
+
+			var fraction = $(this).find('path');
+			var self = $(this);
+
+			fraction.on('mouseenter', function(e) {
+				var legendItems = $(self).parent().find('.js-legend').children();
+
+				for (var i = 0; i < legendItems.length; i++) {
+					if ($(legendItems[i]).find('span').html() == $(this).attr('title')) {
+						$(legendItems[i]).addClass('is-bold');
+					}
+				}
+
+				var percent = $(this).data('percent');
+				$(self).parent().append('<div class="js-percent">' + percent + '</div>');
+				$('.js-percent').css({
+					position: 'absolute',
+					top: 0,
+					left: 0
+				});
+
+			});
+
+			fraction.on('mouseleave', function(e) {
+				var legendItems = $(self).parent().find('.js-legend').children();
+
+				for (var i = 0; i < legendItems.length; i++) {
+					if ($(legendItems[i]).find('span').html() == $(this).attr('title')) {
+						$(legendItems[i]).removeClass('is-bold');
+					}
+				}
+			});
 		})
 		
+	}
+
+
+	function createLegend(props) {
+		var chart = props.chart;
+
+		var data = $(chart).data('pie');
+		var slices = JSON.parse(JSON.stringify(data));
+
+		var legend = document.createElement('ul');
+		legend.className = 'legend js-legend';
+
+		slices.forEach(slice => {
+			var legendItem = document.createElement('li');
+			legendItem.innerHTML = '<div></div><span>' + slice.title + '</span>';
+			legendItem.querySelector('div').style.backgroundColor = slice.color;
+			legend.append(legendItem);
+        });
+
+        chart.parent().append(legend);
 	}
 
 	function createChart(props) {
@@ -39,14 +94,18 @@ export default function chart() {
             ].join(' ');
 
             var pathElement = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+
             pathElement.setAttribute('d', pathData);
             pathElement.setAttribute('fill', slice.color);
-
+            pathElement.setAttribute('title', slice.title);
+            pathElement.setAttribute('data-percent', slice.percent);
+            
             svg.append(pathElement);
 
         });
 
 	}
+
 
 	function getCoordinatesForPercent(percent) {
         const x = Math.cos(2 * Math.PI * percent);
