@@ -1,0 +1,42 @@
+.quotes
+	&__item
+		display: inline-block
+		vertical-align: middle
+.quote
+	position: relative
+	font-size: 0
+	&__photo, &__in
+		display: inline-block
+		vertical-align: middle
+	&__photo
+		width: 120px
+		height: 120px
+		border-radius: 50%
+		position: relative
+		
+		img
+			width: 100%
+			border-radius: 50%
+			+vcenter
+	&__in
+		width: calc(100% - 120px)
+		padding-left: 20px
+	&__text
+		font-size: 16px
+		margin-bottom: 20px
+	&__author
+		position: relative
+		padding-left: 25px
+		.icon-person
+			width: 20px
+			height: 20px
+			fill: $gray
+			position: absolute
+			top: 0
+			left: 0
+			//transform: translate(0, -50%)
+	&__name
+		font-style: italic
+		font-size: 14px
+	&__pos
+		font-size: 12px
