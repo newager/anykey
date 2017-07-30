@@ -4,18 +4,17 @@
 			<h2>Преимущества автоматизации бизнеса</h2>
 		</div>
 	
-		<div class="tab js-tab">
-			<!-- begin filter -->
-			<div class="tab__filter">
-				<button class="tab__link js-tab-link" data-target-content="1"></button>
-				<button class="tab__link js-tab-link" data-target-content="2"></button>
-				<button class="tab__link js-tab-link" data-target-content="3"></button>
-			</div>
-			<!-- end filter -->
-
-			<!-- begin content -->
-			<div class="tab__in">
-				<div class="tab__content js-tab-content" data-content="1">
+		<div class="adv__in">
+			<!-- begin buttons -->
+			<button class="adv__arr adv__arr_prev js-prev">
+				{{ mixins.icon('arrow') }}
+			</button>
+			<button class="adv__arr adv__arr_next js-next">
+				{{ mixins.icon('arrow') }}
+			</button>
+			<!-- end buttons -->
+			<div class="adv__slider js-adv">
+				<div class="adv__slide">
 					<!-- begin chart -->
 					<div class="adv__chart">
 						<div class="pie js-pie" data-pie='[
@@ -48,7 +47,7 @@
 					</div>
 					<!-- end chart -->
 				</div>
-				<div class="tab__content js-tab-content" data-content="2">
+				<div class="adv__slide">
 					<!-- begin chart -->
 					<div class="adv__chart">
 						<div class="pie js-pie" data-pie='[
@@ -81,7 +80,7 @@
 					</div>
 					<!-- end chart -->
 				</div>
-				<div class="tab__content js-tab-content" data-content="3">
+				<div class="adv__slide">
 					<!-- begin chart -->
 					<div class="adv__chart">
 						<div class="pie js-pie" data-pie='[
@@ -93,13 +92,15 @@
 					<!-- end chart -->
 
 					<div class="adv__list">
-						<h4>ERP система позволит:</h4>
-						<ul>
-							<li>Снизить время согласования</li>
-							<li>Меньше забывать о задачах</li>
-							<li>Быстро составлять список дел</li>
-							<li>Больше времени тратить на полезную работу, а не на согласования и коммуникацию</li>
-						</ul>
+						<div class="adv__list-in">
+							<h4>ERP система позволит:</h4>
+							<ul>
+								<li>Снизить время согласования</li>
+								<li>Меньше забывать о задачах</li>
+								<li>Быстро составлять список дел</li>
+								<li>Больше времени тратить на полезную работу, а не на согласования и коммуникацию</li>
+							</ul>
+						</div>
 					</div>
 					
 					<!-- begin chart -->
@@ -113,7 +114,6 @@
 					<!-- end chart -->
 				</div>
 			</div>
-			<!-- end content -->
 		</div>
 	</div>
 </section>

@@ -1,5 +1,6 @@
 import sayHello from './lib/sayHello.js';
 import 'slick-carousel';
+import 'jquery-parallax.js';
 
 
 import './ripple.js';
@@ -22,6 +23,17 @@ $(document).ready(function() {
 			
 	});
 
+	$('.js-adv').slick({
+		autoplay: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		infinite: true,
+		prevArrow: $('.js-prev'),
+		nextArrow: $('.js-next')
+	});
+
 	$('.js-timeline').slick({
 		autoplay: true,
 		slidesToShow: 1,
@@ -29,5 +41,12 @@ $(document).ready(function() {
 		dots: true,
 		arrows: false,
 		infinite: true
+	});
+
+	$('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});
+
+	$('.js-parallax-start').parallax({
+		imageSrc: '/img/anykey-start.jpg',
+		speed: 0.6
 	});
 });

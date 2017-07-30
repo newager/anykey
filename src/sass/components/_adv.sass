@@ -1,63 +1,73 @@
-.tab
-	&__filter
-		display: flex
-		justify-content: space-between
-		max-width: 50%
-		margin: 0 auto 40px
-		border-radius: 4px
-	&__link
-		padding: 10px 0
-		border: 1px solid transparentize($violet, .8)
-		border-radius: 4px
-		background-color: $white
-		box-shadow: 0 0 10px rgba(0,0,0,.1)
-		width: 30%
-		font-size: 14px
-		font-weight: 600
-		text-transform: capitalize
-		letter-spacing: 0.9px
-		color: $violet
-		+trans(transform)
-		&:hover
-			box-shadow: 0 2px 5px rgba(0,0,0,.3)
-			transform: translate(0, -3px)
-		&.is-active
-			background-color: $violet
-			color: $white
-	&__content
-		display: none
-		background-color: $white
-		border: 1px solid transparentize($violet, .8)
-		border-radius: 4px
-		min-height: 450px
-		&.is-active
-			display: flex
-			justify-content: space-between
-			
-			
-
 .adv
+	background: #fff
+	&__in
+		position: relative
+	&__arr
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		width: 35px
+		height: 35px
+		z-index: 100
+		background-color: transparent
+		+trans
+		.icon-arrow
+			font-size: 48px
+			+vcenter
+
+		&_prev
+			transform: rotate(90deg)
+			left: -35px
+			&:hover
+				transform: rotate(90deg) translateY(4px)
+		&_next
+			transform: rotate(-90deg)
+			right: -35px
+			&:hover
+				transform: rotate(-90deg) translateY(4px)
+	&__slider
+		border: 1px solid $gray-border
+		// .slick-dots
+		// 	text-align: center
+			
+		// 	li
+		// 		display: inline-block
+		// 		vertical-align: middle
+		// 		margin: 10px
+		// 		button
+		// 			font-size: 0
+		// 			background-color: transparentize($violet, .7)
+		// 			width: 15px
+		// 			height: 15px
+		// 			border-radius: 50%
+		// 		&.slick-active
+		// 			button
+		// 				background-color: $violet
+	&__slide
+		font-size: 0
+	&__chart, &__list
+		display: inline-block
+		vertical-align: top
 	&__chart
 		width: 35%
 		padding: 20px
 		position: relative
 	&__list
-		background: $violet
-		color: $white
 		width: 30%
-		padding: 20px 30px
-		min-height: 100%
+		min-height: 460px
+		font-size: 16px
+		padding: 30px 20px
+		background-color: $violet
 		h4
-			font-size: 26px
-			text-align: center
-			font-weight: 500
-			letter-spacing: 0.5px
+			font-size: 20px
+			font-weight: normal
 			margin-bottom: 20px
-			color: $yellow
+			color: $white
 		ul
+			color: $white
 			li
 				position: relative
-				padding-left: 35px
+				padding-left: 25px
 				margin-bottom: 20px
 				&:before
 					content: ""
@@ -68,7 +78,7 @@
 					width: 12px
 					height: 12px
 					+cover
-					background-image: url("data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSIyNHB4IiBpZD0iTGF5ZXJfMSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS42NTIsMy4yMTFjLTAuMjkzLTAuMjk1LTAuNzctMC4yOTUtMS4wNjEsMEw5LjQxLDE0LjM0ICBjLTAuMjkzLDAuMjk3LTAuNzcxLDAuMjk3LTEuMDYyLDBMMy40NDksOS4zNTFDMy4zMDQsOS4yMDMsMy4xMTQsOS4xMywyLjkyMyw5LjEyOUMyLjczLDkuMTI4LDIuNTM0LDkuMjAxLDIuMzg3LDkuMzUxICBsLTIuMTY1LDEuOTQ2QzAuMDc4LDExLjQ0NSwwLDExLjYzLDAsMTEuODIzYzAsMC4xOTQsMC4wNzgsMC4zOTcsMC4yMjMsMC41NDRsNC45NCw1LjE4NGMwLjI5MiwwLjI5NiwwLjc3MSwwLjc3NiwxLjA2MiwxLjA3ICBsMi4xMjQsMi4xNDFjMC4yOTIsMC4yOTMsMC43NjksMC4yOTMsMS4wNjIsMGwxNC4zNjYtMTQuMzRjMC4yOTMtMC4yOTQsMC4yOTMtMC43NzcsMC0xLjA3MUwyMS42NTIsMy4yMTF6IiBmaWxsPSIjZjJmMmYyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=")
+					background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS42NTIgMy4yMWMtLjI5My0uMjk0LS43Ny0uMjk0LTEuMDYgMEw5LjQxIDE0LjM0Yy0uMjkzLjI5Ny0uNzcuMjk3LTEuMDYyIDBsLTQuOS00Ljk5Yy0uMTQ0LS4xNDctLjMzNC0uMjItLjUyNS0uMjItLjE5My0uMDAyLS4zOS4wNy0uNTM2LjIyTC4yMjIgMTEuMjk4Yy0uMTQ0LjE0OC0uMjIyLjMzMy0uMjIyLjUyNiAwIC4xOTQuMDc4LjM5Ny4yMjMuNTQ0bDQuOTQgNS4xODRjLjI5Mi4yOTcuNzcuNzc3IDEuMDYyIDEuMDdsMi4xMjQgMi4xNDJjLjI5LjI5My43NjguMjkzIDEuMDYgMGwxNC4zNjctMTQuMzRjLjI5My0uMjk0LjI5My0uNzc3IDAtMS4wN2wtMi4xMjUtMi4xNHoiIGZpbGw9IiNmMmYyZjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==')
 
 
 			

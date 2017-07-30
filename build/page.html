@@ -13,7 +13,7 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <div class="full-l" style="background-image: url('img/anykey-start.jpg')">
+      <div class="full-l js-parallax-start">
         <section class="start">
           <div class="start__in">
             <h1 class="start__title"> Все услуги <span class="start__title_white">IT</span> <br /> и только один <span class="start__title_white">исполнитель</span> </h1>
@@ -43,49 +43,57 @@
         </nav>
       </header>
       <!-- <div class="gradient-bg"> -->
-      <section class="section bms">
+      <section class="section bms js-parallax">
         <div class="l">
           <div class="section__title">
             <h2>Мы предлагаем комплексное внедрение систем управления бизнесом</h2>
           </div>
-          <div class="bms__boxes">
-            <div class="box">
-              <div class="box__logo"> <img src="img/bitrix-logo.svg" alt=""> </div>
-              <div class="box__title">
-                <h3>Битрикс 24</h3>
+          <ul class="bms__blocks">
+            <li class="bms__block">
+              <div class="block">
+                <div class="block__title">
+                  <div class="bms__logo"> <img src="img/bitrix-logo.svg" alt=""> </div>
+                </div>
+                <div class="block__in">
+                  <h3>Битрикс 24</h3>
+                  <p>Функциональная и легко масштабируемая ERP система, которая подойдет как маленьким командам, так и огромным бизнесам.</p>
+                </div>
               </div>
-              <div class="box__text">
-                <p>Функциональная и легко масштабируемая ERP система, которая подойдет как маленьким командам, так и огромным бизнесам.</p>
+            </li>
+            <li class="bms__block">
+              <div class="block">
+                <div class="block__title">
+                  <div class="bms__logo"> <img src="img/pyrus-logo.svg" alt=""> </div>
+                </div>
+                <div class="block__in">
+                  <h3>Pyrus</h3>
+                  <p>Разработка сыскавшая большую популярность среди малых и средних размеров компаний, развивается очень быстро, обрастает новым функционалом, изначально продвигается как замена не эффективному eMail общению внутри компании.</p>
+                </div>
               </div>
-            </div>
-            <div class="box">
-              <div class="box__logo"> <img src="img/pyrus-logo.svg" alt=""> </div>
-              <div class="box__title">
-                <h3>Pyrus</h3>
+            </li>
+            <li class="bms__block">
+              <div class="block">
+                <div class="block__title">
+                  <div class="bms__logo"> <img src="img/dynamics-365-logo.png" alt=""> </div>
+                </div>
+                <div class="block__in">
+                  <h3>Microsoft Dynamics 365 for Operations</h3>
+                  <p>Система управления бизнесом от софтверного гиганта Microsoft, подойдет для большого бизнеса, предусмотрены настройки любых бизнес-процессов, широкие возможности интеграции и еще много всего.</p>
+                </div>
               </div>
-              <div class="box__text">
-                <p>Разработка сыскавшая большую популярность среди малых и средних размеров компаний, развивается очень быстро, обрастает новым функционалом, изначально продвигается как замена не эффективному eMail общению внутри компании.</p>
+            </li>
+            <li class="bms__block">
+              <div class="block">
+                <div class="block__title">
+                  <div class="bms__logo"> <img src="img/onebox-logo.png" alt=""> </div>
+                </div>
+                <div class="block__in">
+                  <h3>OneBox: CRM, ERP, BPM</h3>
+                  <p>Легко кастомизируемая система управления бизнесом, имеет множество тонких настроек, есть возможность заказать мобильное приложение с уникальным функционалом.</p>
+                </div>
               </div>
-            </div>
-            <div class="box">
-              <div class="box__logo"> <img src="img/dynamics-365-logo.png" alt=""> </div>
-              <div class="box__title">
-                <h3>Microsoft Dynamics 365 for Operations</h3>
-              </div>
-              <div class="box__text">
-                <p>Система управления бизнесом от софтверного гиганта Microsoft, подойдет для большого бизнеса, предусмотрены настройки любых бизнес-процессов, широкие возможности интеграции и еще много всего.</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="box__logo"> <img src="img/onebox-logo.png" alt=""> </div>
-              <div class="box__title">
-                <h3>OneBox: CRM, ERP, BPM</h3>
-              </div>
-              <div class="box__text">
-                <p>Легко кастомизируемая система управления бизнесом, имеет множество тонких настроек, есть возможность заказать мобильное приложение с уникальным функционалом.</p>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="section adv">
@@ -93,13 +101,19 @@
           <div class="section__title">
             <h2>Преимущества автоматизации бизнеса</h2>
           </div>
-          <div class="tab js-tab">
-            <!-- begin filter -->
-            <div class="tab__filter"> <button class="tab__link js-tab-link" data-target-content="1"></button> <button class="tab__link js-tab-link" data-target-content="2"></button> <button class="tab__link js-tab-link" data-target-content="3"></button> </div>
-            <!-- end filter -->
-            <!-- begin content -->
-            <div class="tab__in">
-              <div class="tab__content js-tab-content" data-content="1">
+          <div class="adv__in">
+            <!-- begin buttons --><button class="adv__arr adv__arr_prev js-prev">
+				
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+			</button> <button class="adv__arr adv__arr_next js-next">
+				
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+			</button>
+            <!-- end buttons -->
+            <div class="adv__slider js-adv">
+              <div class="adv__slide">
                 <!-- begin chart -->
                 <div class="adv__chart">
                   <div class="pie js-pie" data-pie='[
@@ -128,7 +142,7 @@
                 </div>
                 <!-- end chart -->
               </div>
-              <div class="tab__content js-tab-content" data-content="2">
+              <div class="adv__slide">
                 <!-- begin chart -->
                 <div class="adv__chart">
                   <div class="pie js-pie" data-pie='[
@@ -157,7 +171,7 @@
                 </div>
                 <!-- end chart -->
               </div>
-              <div class="tab__content js-tab-content" data-content="3">
+              <div class="adv__slide">
                 <!-- begin chart -->
                 <div class="adv__chart">
                   <div class="pie js-pie" data-pie='[
@@ -167,13 +181,15 @@
                 </div>
                 <!-- end chart -->
                 <div class="adv__list">
-                  <h4>ERP система позволит:</h4>
-                  <ul>
-                    <li>Снизить время согласования</li>
-                    <li>Меньше забывать о задачах</li>
-                    <li>Быстро составлять список дел</li>
-                    <li>Больше времени тратить на полезную работу, а не на согласования и коммуникацию</li>
-                  </ul>
+                  <div class="adv__list-in">
+                    <h4>ERP система позволит:</h4>
+                    <ul>
+                      <li>Снизить время согласования</li>
+                      <li>Меньше забывать о задачах</li>
+                      <li>Быстро составлять список дел</li>
+                      <li>Больше времени тратить на полезную работу, а не на согласования и коммуникацию</li>
+                    </ul>
+                  </div>
                 </div>
                 <!-- begin chart -->
                 <div class="adv__chart">
@@ -185,12 +201,11 @@
                 <!-- end chart -->
               </div>
             </div>
-            <!-- end content -->
           </div>
         </div>
       </section>
       <!-- </div> -->
-      <section class="section uni">
+      <section class="section uni js-parallax">
         <div class="l">
           <div class="section__title">
             <h2>Работа в любой точке мира</h2>
@@ -267,24 +282,24 @@
             </ol>
           </div>
         </div>
-      </section>
-      <section class="section quotes">
-        <div class="l">
-          <div class="quotes__item">
-            <div class="quote">
-              <div class="quote__photo"> <img src="img/photo-1.jpg" alt=""> </div>
-              <div class="quote__in">
-                <div class="quote__text"> <q>Мы дадим Вам инструмент, и научим пользоваться.</q> </div>
-                <div class="quote__author"> <svg class="icon icon-person"><use xlink:href="img/sprite.svg#icon-person"></use></svg>
-                  <div class="quote__name">Влад Оснач</div>
-                  <div class="quote__pos">Системный администратор</div>
+        <div class="quotes">
+          <div class="l">
+            <div class="quotes__item">
+              <div class="quote">
+                <div class="quote__photo"> <img src="img/photo-1.jpg" alt=""> </div>
+                <div class="quote__in">
+                  <div class="quote__text"> <q>Мы дадим Вам инструмент, и научим пользоваться.</q> </div>
+                  <div class="quote__author"> <svg class="icon icon-person"><use xlink:href="img/sprite.svg#icon-person"></use></svg>
+                    <div class="quote__name">Влад Оснач</div>
+                    <div class="quote__pos">Системный администратор</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section price">
+      <section class="section price js-parallax">
         <div class="l">
           <!-- begin section title -->
           <div class="section__title">
@@ -403,7 +418,86 @@
           </ul>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section clients">
+        <div class="l">
+          <div class="section__title">
+            <h2>Нам доверяют свою IT инфраструктуру</h2>
+          </div>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="" class="circle">
+                <div class="circle__in">
+                  <!-- begin logo -->
+                  <div class="circle__logo"> <img src="img/zemik.jpg" alt=""> </div>
+                  <!-- end logo -->
+                  <!-- begin tooltip -->
+                  <div class="circle__tooltip">
+                    <p>ООО &quot;ЗЕМИК&quot;</p>
+                  </div>
+                  <!-- end tooltip -->
+                </div>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="circle">
+                <div class="circle__in">
+                  <!-- begin logo -->
+                  <div class="circle__logo"> <img src="img/4smart.png" alt=""> </div>
+                  <!-- end logo -->
+                  <!-- begin tooltip -->
+                  <div class="circle__tooltip">
+                    <p>Бизнес академия 4Smart</p>
+                  </div>
+                  <!-- end tooltip -->
+                </div>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="circle">
+                <div class="circle__in">
+                  <!-- begin logo -->
+                  <div class="circle__logo"> <img src="img/vagar.jpg" alt=""> </div>
+                  <!-- end logo -->
+                  <!-- begin tooltip -->
+                  <div class="circle__tooltip">
+                    <p>ОВЗ &quot;ВАГАР&quot;</p>
+                  </div>
+                  <!-- end tooltip -->
+                </div>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="circle">
+                <div class="circle__in">
+                  <!-- begin logo -->
+                  <div class="circle__logo"> <img src="img/taco.png" alt=""> </div>
+                  <!-- end logo -->
+                  <!-- begin tooltip -->
+                  <div class="circle__tooltip">
+                    <p>ТАКО Холдинг</p>
+                  </div>
+                  <!-- end tooltip -->
+                </div>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="circle">
+                <div class="circle__in">
+                  <!-- begin logo -->
+                  <div class="circle__logo"> <img src="img/tenzomir.jpg" alt=""> </div>
+                  <!-- end logo -->
+                  <!-- begin tooltip -->
+                  <div class="circle__tooltip">
+                    <p>ООО &quot;ТЕНЗОМИР&quot;</p>
+                  </div>
+                  <!-- end tooltip -->
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contacts js-parallax">
         <div class="l">
           <!-- begin section title -->
           <div class="section__title">
@@ -420,7 +514,7 @@
                   <div class="contacts__icon"> <svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 8h48v34H1z"/><path fill="none" d="M0 0h50v50H0z"/><path fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2" d="M33.357 25.662l15.533 12.28M1.11 37.942l16.206-12.815"/><path d="M1.11 12.053s18.4 16.037 19.9 17.342S24.07 31 25 31s2.492-.3 3.99-1.604 19.9-17.342 19.9-17.342" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="1.996"/></svg>                    </div>
                   <!-- end icon -->
                   <h3>Написать нам</h3>
-                  <p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p> <a href="" class="btn btn_link">Написать сообщение</a> </div>
+                  <p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p> <a href="#!" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0,0,0,.1)">Написать сообщение</a> </div>
               </div>
               <!-- end block -->
             </div>
@@ -432,7 +526,7 @@
                   <div class="contacts__icon"> <svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h50v50H0z"/><path d="M30.217 35.252s4.05-2.318 5.11-2.875c1.056-.56 2.15-.7 2.816-.294 1.007.616 9.463 6.24 10.175 6.74.712.498 1.055 1.923.076 3.32-.975 1.395-5.473 6.915-7.38 6.856-1.908-.063-9.845-.237-24.812-15.208C1.238 18.826 1.062 10.887 1 8.978.94 7.07 6.46 2.57 7.855 1.595c1.398-.975 2.825-.608 3.32.078.565.78 6.125 9.21 6.737 10.176.42.66.265 1.76-.294 2.818-.556 1.06-2.874 5.11-2.874 5.11s1.634 2.786 7.16 8.31c5.527 5.527 8.313 7.164 8.313 7.164z" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2"/></svg>                    </div>
                   <!-- end icon -->
                   <h3>Позвонить нам</h3>
-                  <p>Мы всегда рады проконсультировать Вас по телефону</p> <a href="tel:+380668543401">+38 (066) 854 34 01</a> </div>
+                  <p>Мы всегда рады проконсультировать Вас по телефону</p> <a href="tel:+380668543401" class="contacts__tel">+38 (066) 854 34 01</a> </div>
               </div>
               <!-- end block -->
             </div>
@@ -446,10 +540,18 @@
                   <h3>Дружить с нами</h3>
                   <p>Мы работаем над открытым представлением нашей компании в социальных сетях, следить за новостями можно по следующим ссылкам.</p>
                   <ul class="contacts__social">
-                    <li> <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg> </li>
-                    <li> <svg class="icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg> </li>
-                    <li> <svg class="icon icon-linkedin"><use xlink:href="img/sprite.svg#icon-linkedin"></use></svg> </li>
-                    <li> <svg class="icon icon-github"><use xlink:href="img/sprite.svg#icon-github"></use></svg> </li>
+                    <li><a href="">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+                    <li><a href="">
+<svg class="icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+</a></li>
+                    <li><a href="">
+<svg class="icon icon-linkedin"><use xlink:href="img/sprite.svg#icon-linkedin"></use></svg>
+</a></li>
+                    <li><a href="">
+<svg class="icon icon-github"><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+</a></li>
                   </ul>
                 </div>
               </div>
@@ -457,6 +559,34 @@
             </div>
           </div>
           <!-- end in -->
+        </div>
+        <div class="form">
+          <div class="l">
+            <div class="section__title">
+              <h2>Заполните форму и мы обязательно с Вами свяжемся</h2>
+            </div>
+            <div class="block">
+              <div class="block__title">
+                <h3>Форма обратной связи</h3>
+              </div>
+              <div class="form__in">
+                <form action="">
+                  <!-- begin input -->
+                  <div class="input"> <input type="text"> <label for="">Имя</label> </div>
+                  <!-- end input -->
+                  <!-- begin input -->
+                  <div class="input"> <input type="email"> <label for="">E-mail</label> </div>
+                  <!-- end input -->
+                  <!-- begin input -->
+                  <div class="input"> <input type="tel"> <label for="">Телефон</label> </div>
+                  <!-- end input -->
+                  <!-- begin input -->
+                  <div class="input"> <textarea></textarea> <label for="">Сообщение</label> </div>
+                  <!-- end input -->
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- </div> -->

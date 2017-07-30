@@ -1,4 +1,4 @@
-<section class="section contacts">
+<section class="section contacts js-parallax">
 	<div class="l">
 		<!-- begin section title -->
 		<div class="section__title">
@@ -20,7 +20,7 @@
 
 						<h3>Написать нам</h3>
 						<p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p>
-						<a href="" class="btn btn_link">Написать сообщение</a>
+						<a href="#!" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0,0,0,.1)">Написать сообщение</a>
 					</div>
 				</div>
 				<!-- end block -->
@@ -38,7 +38,7 @@
 
 						<h3>Позвонить нам</h3>
 						<p>Мы всегда рады проконсультировать Вас по телефону</p>
-						<a href="tel:+380668543401">+38 (066) 854 34 01</a>
+						<a href="tel:+380668543401" class="contacts__tel">+38 (066) 854 34 01</a>
 					</div>
 				</div>
 				<!-- end block -->
@@ -57,10 +57,10 @@
 						<h3>Дружить с нами</h3>
 						<p>Мы работаем над открытым представлением нашей компании в социальных сетях, следить за новостями можно по следующим ссылкам.</p>
 						<ul class="contacts__social">
-							<li>{{ mixins.icon('facebook') }}</li>
-							<li>{{ mixins.icon('twitter') }}</li>
-							<li>{{ mixins.icon('linkedin') }}</li>
-							<li>{{ mixins.icon('github') }}</li>
+							<li><a href="">{{ mixins.icon('facebook') }}</a></li>
+							<li><a href="">{{ mixins.icon('twitter') }}</a></li>
+							<li><a href="">{{ mixins.icon('linkedin') }}</a></li>
+							<li><a href="">{{ mixins.icon('github') }}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -70,4 +70,5 @@
 		</div>
 		<!-- end in -->
 	</div>
+	{% include "partials/_form.html" %}
 </section>

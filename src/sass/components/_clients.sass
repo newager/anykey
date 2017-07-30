@@ -1,0 +1,54 @@
+.clients
+	background: #fff
+	padding-bottom: 100px
+	&__list
+		display: flex
+		justify-content: space-between
+	&__item
+		width: 150px
+.circle
+	width: 150px
+	height: 150px
+	background-color: #fff
+	border-radius: 50%
+	border: 1px solid $gray-border
+	box-shadow: 0 3px 6px rgba(0,0,0,.1)
+	+trans
+	+vertical
+	position: relative
+	text-decoration: none
+	display: block
+	color: $violet
+	&:hover
+		transform: scale(1.1)
+		.circle__tooltip
+			transform: translateY(0)
+			opacity: 1
+
+	&__in
+		font-size: 14px
+		display: inline-block
+		vertical-align: middle
+		
+	&__logo
+		width: 125px
+		margin: 0 auto
+		position: relative
+		z-index: 1
+		img
+			max-width: 80%
+			+vcenter
+	&__tooltip
+		position: absolute
+		z-index: -1
+		top: 100%
+		width: 125px
+		padding: 10px 0
+		text-align: center
+		font-weight: 600
+		+trans
+		transform: translateY(-10px)
+		opacity: 0
+		
+		
+		

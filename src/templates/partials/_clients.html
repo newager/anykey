@@ -1,0 +1,51 @@
+{% set clients = [
+	{
+		logo: 'zemik.jpg',
+		name: 'ООО "ЗЕМИК"'
+	},
+	{
+		logo: '4smart.png',
+		name: 'Бизнес академия 4Smart'
+	},
+	{
+		logo: 'vagar.jpg',
+		name: 'ОВЗ "ВАГАР"'
+	},
+	{
+		logo: 'taco.png',
+		name: 'ТАКО Холдинг'
+	},
+	{
+		logo: 'tenzomir.jpg',
+		name: 'ООО "ТЕНЗОМИР"'
+	}
+]
+%}
+
+<section class="section clients">
+	<div class="l">
+		<div class="section__title">
+			<h2>Нам доверяют свою IT инфраструктуру</h2>
+		</div>
+		<ul class="clients__list">
+			{% for client in clients %}
+			<li class="clients__item">
+				<a href="" class="circle">
+					<div class="circle__in">
+						<!-- begin logo -->
+						<div class="circle__logo">
+							<img src="img/{{ client.logo }}" alt="">
+						</div>
+						<!-- end logo -->
+						<!-- begin tooltip -->
+						<div class="circle__tooltip">
+							<p>{{ client.name }}</p>
+						</div>
+						<!-- end tooltip -->
+					</div>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
