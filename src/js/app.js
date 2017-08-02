@@ -45,8 +45,40 @@ $(document).ready(function() {
 
 	$('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});
 
-	$('.js-parallax-start').parallax({
-		imageSrc: '/img/anykey-start.jpg',
-		speed: 0.6
-	});
+	// $('.js-parallax-start').parallax({
+	// 	imageSrc: '/img/anykey-start.jpg',
+	// 	speed: 0.6
+	// });
+
+	$('a').on('click', function() {
+    	var h = this.getAttribute('href');
+	    if(/^#/.test(h) === true) {
+	      $('html,body').animate({
+	        scrollTop: $(h).offset().top - 60
+	      }, 1500);
+	    }
+  	});
+
+
 });
+
+// header fixed
+// var height = $(window).height();
+
+// $(window).on('scroll', function() {
+
+//   if($(window).scrollTop() > height && !$('.header').hasClass('is-fixed')) {
+//     // $('.header').css({
+//     //     backgroundColor: 'rgba(255,255,255,1)'
+//     // });
+//     $('.header').addClass('is-fixed');
+//   }
+//   if($(window).scrollTop() < height && $('.header').hasClass('is-fixed')) {
+//     // $('.header').css({
+//     //     backgroundColor: 'transparent'
+//     // });
+
+//     $('.header').removeClass('is-fixed');
+//   }
+
+// });

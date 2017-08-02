@@ -41,6 +41,13 @@
 	border: 1px solid $gray-border
 	box-shadow: 0 4px 10px rgba(0,0,0,.1)
 	border-radius: 2px
+	&_simple
+		border: 0
+	&_shadow
+		+trans(.2s)
+		&:hover
+			box-shadow: 0 10px 30px rgba(0,0,0,.1)
+			transform: translateY(-8px)
 	//height: 100%
 	&__title
 		padding: 20px 30px

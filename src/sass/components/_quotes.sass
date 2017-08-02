@@ -1,17 +1,21 @@
 .quotes
-	padding-top: 50px
+	padding-top: 70px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
 	&__item
-		display: inline-block
-		vertical-align: middle
+		width: 48%
+		margin-bottom: 50px
 .quote
 	position: relative
 	font-size: 0
+	color: $white
 	&__photo, &__in
 		display: inline-block
 		vertical-align: middle
 	&__photo
-		width: 120px
-		height: 120px
+		width: 150px
+		height: 150px
 		border-radius: 50%
 		position: relative
 		
@@ -20,7 +24,7 @@
 			border-radius: 50%
 			+vcenter
 	&__in
-		width: calc(100% - 120px)
+		width: calc(100% - 150px)
 		padding-left: 20px
 	&__text
 		font-size: 16px
@@ -28,10 +32,11 @@
 	&__author
 		position: relative
 		padding-left: 25px
+		opacity: .7
 		.icon-person
 			width: 20px
 			height: 20px
-			fill: $gray
+			fill: $white
 			position: absolute
 			top: 0
 			left: 0

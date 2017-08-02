@@ -23,27 +23,29 @@ boxes = [
 ]
 %}
 
-<section class="section bms js-parallax">
-	<div class="l">
-		<div class="section__title">
-			<h2>Мы предлагаем комплексное внедрение систем управления бизнесом</h2>
-		</div>
-		<ul class="bms__blocks">
-			{% for box in boxes %}
-			<li class="bms__block">
-				<div class="block">
-					<div class="block__title">
-						<div class="bms__logo">
-							<img src="img/{{ box.logo }}" alt="">
+<section class="section bms" id="erp">
+	<div class="section__in js-parallax">
+		<div class="l">
+			<div class="section__title">
+				<h2>Мы предлагаем комплексное внедрение систем управления бизнесом</h2>
+			</div>
+			<ul class="bms__blocks">
+				{% for box in boxes %}
+				<li class="bms__block">
+					<div class="block block_shadow">
+						<div class="block__title">
+							<div class="bms__logo">
+								<img src="img/{{ box.logo }}" alt="">
+							</div>
+						</div>
+						<div class="block__in">
+							<h3>{{ box.title | safe }}</h3>
+							<p>{{ box.text | safe }}</p>
 						</div>
 					</div>
-					<div class="block__in">
-						<h3>{{ box.title | safe }}</h3>
-						<p>{{ box.text | safe }}</p>
-					</div>
-				</div>
-			</li>
-			{% endfor %}
-		</ul>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
 	</div>
 </section>

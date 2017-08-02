@@ -1,74 +1,78 @@
-<section class="section contacts js-parallax">
-	<div class="l">
-		<!-- begin section title -->
-		<div class="section__title">
-			<h2>Задайте нам любые возникшие вопросы</h2>
+<section class="section contacts" id="contacts">
+	<div class="section__in js-parallax">
+		<div class="l">
+			<!-- begin section title -->
+			<div class="section__title">
+				<h2>Задайте нам любые возникшие вопросы</h2>
+			</div>
+			<!-- end section title -->
+
+			<!-- begin in -->
+			<div class="contacts__in">
+				
+				<div class="contacts__item">
+					<!-- begin block -->
+					<div class="block block_shadow">
+						<div class="block__in">
+							<!-- begin icon -->
+							<div class="contacts__icon">
+								<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h50v50H0z"/><path d="M30.217 35.252s4.05-2.318 5.11-2.875c1.056-.56 2.15-.7 2.816-.294 1.007.616 9.463 6.24 10.175 6.74.712.498 1.055 1.923.076 3.32-.975 1.395-5.473 6.915-7.38 6.856-1.908-.063-9.845-.237-24.812-15.208C1.238 18.826 1.062 10.887 1 8.978.94 7.07 6.46 2.57 7.855 1.595c1.398-.975 2.825-.608 3.32.078.565.78 6.125 9.21 6.737 10.176.42.66.265 1.76-.294 2.818-.556 1.06-2.874 5.11-2.874 5.11s1.634 2.786 7.16 8.31c5.527 5.527 8.313 7.164 8.313 7.164z" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2"/></svg>
+							</div>
+							<!-- end icon -->
+
+							<h3>Позвонить нам</h3>
+							<p>Мы всегда рады проконсультировать Вас по телефону</p>
+							<a href="tel:+380668543401" class="contacts__tel">+38 (066) 854 34 01</a>
+						</div>
+					</div>
+					<!-- end block -->
+					
+				</div>
+
+				<div class="contacts__item">
+					<!-- begin block -->
+					<div class="block block_shadow">
+						<div class="block__in">
+							<!-- begin icon -->
+							<div class="contacts__icon">
+								<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 8h48v34H1z"/><path fill="none" d="M0 0h50v50H0z"/><path fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2" d="M33.357 25.662l15.533 12.28M1.11 37.942l16.206-12.815"/><path d="M1.11 12.053s18.4 16.037 19.9 17.342S24.07 31 25 31s2.492-.3 3.99-1.604 19.9-17.342 19.9-17.342" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="1.996"/></svg>
+							</div>
+							<!-- end icon -->
+
+							<h3>Написать нам</h3>
+							<p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p>
+							<a href="#form" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0,0,0,.1)">Написать сообщение</a>
+						</div>
+					</div>
+					<!-- end block -->
+					
+				</div>
+				<div class="contacts__item">
+					<!-- begin block -->
+					<div class="block block_shadow">
+						<div class="block__in">
+							<!-- begin icon -->
+							<div class="contacts__icon">
+								<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h50v50H0z"/><path d="M24.933 33.528c-.146-1.612-.09-2.737-.09-4.21.73-.383 2.038-2.825 2.26-4.888.573-.047 1.478-.607 1.743-2.818.143-1.187-.425-1.855-.77-2.065.933-2.81 2.873-11.5-3.59-12.397-.664-1.168-2.367-1.76-4.58-1.76-8.854.164-9.922 6.687-7.98 14.157-.346.21-.914.878-.772 2.065.266 2.21 1.17 2.77 1.744 2.818.22 2.062 1.58 4.505 2.312 4.888 0 1.473.055 2.598-.09 4.21C13.366 38.238 1.545 36.916 1 46h38c-.545-9.084-12.315-7.762-14.067-12.472z" fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M36.422 40.587H49c-.457-7.65-10.37-6.534-11.847-10.5-.122-1.36-.075-2.306-.075-3.547.616-.323 1.717-2.378 1.903-4.115.482-.04 1.246-.51 1.47-2.373.12-1-.36-1.562-.65-1.74.785-2.367 2.42-9.683-3.022-10.44-.56-.983-1.993-1.48-3.858-1.48-2.353.043-4.052.62-5.227 1.587" fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+							</div>
+							<!-- end icon -->
+
+							<h3>Дружить с нами</h3>
+							<p>Мы работаем над открытым представлением нашей компании в социальных сетях, следить за новостями можно по следующим ссылкам.</p>
+							<ul class="contacts__social">
+								<li><a href="">{{ mixins.icon('facebook') }}</a></li>
+								<li><a href="">{{ mixins.icon('twitter') }}</a></li>
+								<li><a href="">{{ mixins.icon('linkedin') }}</a></li>
+								<li><a href="">{{ mixins.icon('github') }}</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end block -->
+					
+				</div>
+			</div>
+			<!-- end in -->
 		</div>
-		<!-- end section title -->
-
-		<!-- begin in -->
-		<div class="contacts__in">
-			<div class="contacts__item">
-				<!-- begin block -->
-				<div class="block">
-					<div class="block__in">
-						<!-- begin icon -->
-						<div class="contacts__icon">
-							<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 8h48v34H1z"/><path fill="none" d="M0 0h50v50H0z"/><path fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2" d="M33.357 25.662l15.533 12.28M1.11 37.942l16.206-12.815"/><path d="M1.11 12.053s18.4 16.037 19.9 17.342S24.07 31 25 31s2.492-.3 3.99-1.604 19.9-17.342 19.9-17.342" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="1.996"/></svg>
-						</div>
-						<!-- end icon -->
-
-						<h3>Написать нам</h3>
-						<p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p>
-						<a href="#!" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0,0,0,.1)">Написать сообщение</a>
-					</div>
-				</div>
-				<!-- end block -->
-				
-			</div>
-			<div class="contacts__item">
-				<!-- begin block -->
-				<div class="block">
-					<div class="block__in">
-						<!-- begin icon -->
-						<div class="contacts__icon">
-							<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h50v50H0z"/><path d="M30.217 35.252s4.05-2.318 5.11-2.875c1.056-.56 2.15-.7 2.816-.294 1.007.616 9.463 6.24 10.175 6.74.712.498 1.055 1.923.076 3.32-.975 1.395-5.473 6.915-7.38 6.856-1.908-.063-9.845-.237-24.812-15.208C1.238 18.826 1.062 10.887 1 8.978.94 7.07 6.46 2.57 7.855 1.595c1.398-.975 2.825-.608 3.32.078.565.78 6.125 9.21 6.737 10.176.42.66.265 1.76-.294 2.818-.556 1.06-2.874 5.11-2.874 5.11s1.634 2.786 7.16 8.31c5.527 5.527 8.313 7.164 8.313 7.164z" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2"/></svg>
-						</div>
-						<!-- end icon -->
-
-						<h3>Позвонить нам</h3>
-						<p>Мы всегда рады проконсультировать Вас по телефону</p>
-						<a href="tel:+380668543401" class="contacts__tel">+38 (066) 854 34 01</a>
-					</div>
-				</div>
-				<!-- end block -->
-				
-			</div>
-			<div class="contacts__item">
-				<!-- begin block -->
-				<div class="block">
-					<div class="block__in">
-						<!-- begin icon -->
-						<div class="contacts__icon">
-							<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h50v50H0z"/><path d="M24.933 33.528c-.146-1.612-.09-2.737-.09-4.21.73-.383 2.038-2.825 2.26-4.888.573-.047 1.478-.607 1.743-2.818.143-1.187-.425-1.855-.77-2.065.933-2.81 2.873-11.5-3.59-12.397-.664-1.168-2.367-1.76-4.58-1.76-8.854.164-9.922 6.687-7.98 14.157-.346.21-.914.878-.772 2.065.266 2.21 1.17 2.77 1.744 2.818.22 2.062 1.58 4.505 2.312 4.888 0 1.473.055 2.598-.09 4.21C13.366 38.238 1.545 36.916 1 46h38c-.545-9.084-12.315-7.762-14.067-12.472z" fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M36.422 40.587H49c-.457-7.65-10.37-6.534-11.847-10.5-.122-1.36-.075-2.306-.075-3.547.616-.323 1.717-2.378 1.903-4.115.482-.04 1.246-.51 1.47-2.373.12-1-.36-1.562-.65-1.74.785-2.367 2.42-9.683-3.022-10.44-.56-.983-1.993-1.48-3.858-1.48-2.353.043-4.052.62-5.227 1.587" fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
-						</div>
-						<!-- end icon -->
-
-						<h3>Дружить с нами</h3>
-						<p>Мы работаем над открытым представлением нашей компании в социальных сетях, следить за новостями можно по следующим ссылкам.</p>
-						<ul class="contacts__social">
-							<li><a href="">{{ mixins.icon('facebook') }}</a></li>
-							<li><a href="">{{ mixins.icon('twitter') }}</a></li>
-							<li><a href="">{{ mixins.icon('linkedin') }}</a></li>
-							<li><a href="">{{ mixins.icon('github') }}</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- end block -->
-				
-			</div>
-		</div>
-		<!-- end in -->
 	</div>
 	{% include "partials/_form.html" %}
 </section>

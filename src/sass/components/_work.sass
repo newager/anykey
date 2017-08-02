@@ -1,5 +1,5 @@
 .work
-	background: #fff
+	background: linear-gradient(165deg, #5f2c82, #49a09d)
 	&__list
 		padding-top: 20px
 
@@ -11,9 +11,15 @@
 			margin: 0 auto
 			text-align: center
 		h3
-			color: $violet
-			letter-spacing: 0.2px
+			color: $white
+			font-weight: normal
+			font-size: 24px
+			letter-spacing: 0.8px
 			margin-bottom: 20px
+		p
+			color: transparentize($white, .3)
+			letter-spacing: 0.5px
+			font-size: 17px
 	&__icon
 		width: 100px
 		margin: 0 auto 30px
@@ -32,8 +38,9 @@
 			position: relative
 			&.slick-active
 				button
-					color: #310a3f
+					color: $white
 					font-weight: 600
+					border-color: $white
 					&:after
 						opacity: 1
 
@@ -41,12 +48,12 @@
 			&:before
 				content: ""
 				display: block
-				width: calc(100% - 50px)
-				height: 2px
-				background: $gradient-lines
+				width: calc(100% - 46px)
+				height: 1px
+				background-color: transparentize($white, .7)
 				position: absolute
 				top: 50%
-				right: 2px
+				right: 0px
 				transform: translate(0, -50%)
 				z-index: 0
 				opacity: .8
@@ -59,20 +66,21 @@
 				height: 46px
 				border-radius: 50%
 				position: relative
-				background-color: #fff
+				background-color: transparent
 				font-size: 20px
 				line-height: 44px
-				color: transparentize(#310a3f, .5)
+				border: 1px solid transparentize($white, .7)
+				color: transparentize($white, .7)
 
-				&:after
-					content: ""
-					display: block
-					width: 50px
-					height: 50px
-					background: $gradient-lines
-					position: absolute
-					top: -2px
-					left: -2px
-					z-index: -1
-					border-radius: 50%
-					opacity: .5
+				// &:after
+				// 	content: ""
+				// 	display: block
+				// 	width: 50px
+				// 	height: 50px
+				// 	background: $gradient-lines
+				// 	position: absolute
+				// 	top: -2px
+				// 	left: -2px
+				// 	z-index: -1
+				// 	border-radius: 50%
+				// 	opacity: .5

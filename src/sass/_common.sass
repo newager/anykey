@@ -28,9 +28,24 @@ body
 	background: $gradient-yellow-reverse
 
 .section
-	padding: 50px 0
+	position: relative
+	&:before
+		content: ""
+		+coverdiv
+		background-color: $white
+		z-index: -200
+	&__in
+		padding: 50px 0
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: contain
 	&__title
 		text-align: center
 		margin-bottom: 40px
 		color: $violet
 		font-size: 18px
+		&_white
+			color: $white
+			h2
+				font-weight: normal
+			
