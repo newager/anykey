@@ -2,12 +2,25 @@
 	&__list
 		+justify
 	&__pack
-		width: 32%
+		width: 31%
 		text-align: left
 		text-align-last: auto
 		line-height: normal
 		display: inline-block
 		vertical-align: top
+		margin-top: 20px
+		&_special
+			width: 34%
+			margin-top: 0
+			.block
+				background-color: transparentize($violet, .2)
+				color: #fff
+			.block__title, 
+			.price__current,
+			.price__extra
+				color: #fff
+			.btn
+				color: #000
 		
 	&__current
 		font-size: 20px
@@ -48,7 +61,7 @@
 		&:hover
 			box-shadow: 0 10px 30px rgba(0,0,0,.1)
 			transform: translateY(-8px)
-	//height: 100%
+
 	&__title
 		padding: 20px 30px
 		text-align: center

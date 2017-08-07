@@ -12,3 +12,20 @@
 	//background-color: $white
 	margin-bottom: 300px
 	box-shadow: 0 6px 30px rgba(0,0,0,.3)
+	position: relative
+	background-repeat: repeat-y
+	background-position: 0 50%
+	background-size: contain
+	&:before
+		content: ""
+		+coverdiv
+		background-color: $white
+.in
+	position: relative
+	z-index: 1
+.parallax
+	+coverdiv
+	background-repeat: repeat-y
+	background-position: 0% 50%
+	background-size: contain
+	z-index: 0

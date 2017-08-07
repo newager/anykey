@@ -5,12 +5,18 @@ $height: 70px
 	padding: 0 20px
 	height: $height
 	display: flex
+	
 	&.is-fixed
 		position: fixed
 		top: 0
 		left: 0
 		z-index: 1000
 		width: 100%
+		transform: translate(0,-100%)
+		&.is-animated
+			transform: translate(0,0)
+			transition: transform .4s ease-in-out
+		
 	&__logo
 		width: 25%
 		margin: auto 0

@@ -64,6 +64,7 @@
   "dependencies": {
     "d3": "^4.10.0",
     "jquery-parallax.js": "^1.4.3",
+    "scroll-parallax": "^2.0.2",
     "slick-carousel": "^1.6.0"
   }
 }

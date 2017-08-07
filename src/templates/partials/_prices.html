@@ -26,7 +26,8 @@
 			'Подменный фонд',
 			'Неограниченное количество экстренных вызовов',
 			'Скорость решения заявки от 1 до 2 часов'
-		]
+		],
+		mod: true
 	},
 	{
 		title: 'Комфорт пакет',
@@ -45,7 +46,7 @@
 %}
 
 <section class="section price" id="prices">
-	<div class="section__in js-parallax">
+	<div class="section__in">
 		<div class="l">
 			<!-- begin section title -->
 			<div class="section__title">
@@ -54,7 +55,7 @@
 			<!-- end section title -->
 			<ul class="price__list">
 				{% for pack in packs %}
-				<li class="price__pack">
+				<li class="price__pack{% if pack.mod %} price__pack_special{% endif %}">
 					<div class="block block_shadow">
 						<!-- begin title -->
 						<div class="block__title">

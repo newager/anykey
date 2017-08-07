@@ -5,6 +5,11 @@ body
 	color: $common
 	//background: $gradient-simple
 	background-color: $white
+	position: relative
+	
+	&.is-fixed
+		overflow: hidden
+		max-height: 100vh
 .btn
 	border: 0
 	outline: 0
@@ -12,6 +17,7 @@ body
 	position: relative
 	overflow: hidden
 	font-size: 14px
+	+u
 	&_ts
 		background-color: transparent
 	&_link
@@ -29,15 +35,15 @@ body
 
 .section
 	position: relative
-	&:before
-		content: ""
-		+coverdiv
-		background-color: $white
-		z-index: -200
+	// &:before
+	// 	content: ""
+	// 	+coverdiv
+	// 	background-color: $white
+	// 	z-index: -200
 	&__in
 		padding: 50px 0
-		background-repeat: no-repeat
-		background-position: 50% 50%
+		background-repeat: repeat-y
+		background-position: 0 50%
 		background-size: contain
 	&__title
 		text-align: center

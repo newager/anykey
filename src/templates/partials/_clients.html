@@ -8,12 +8,16 @@
 		name: 'Бизнес академия 4Smart'
 	},
 	{
-		logo: 'vagar.jpg',
+		logo: 'vagar.jpeg',
 		name: 'ОВЗ "ВАГАР"'
 	},
 	{
 		logo: 'taco.png',
 		name: 'ТАКО Холдинг'
+	},
+	{
+		logo: 'tenzomir.jpg',
+		name: 'ООО "ТЕНЗОМИР"'
 	},
 	{
 		logo: 'tenzomir.jpg',
@@ -28,26 +32,37 @@
 			<div class="section__title">
 				<h2>Нам доверяют свою IT инфраструктуру</h2>
 			</div>
-			<ul class="clients__list">
-				{% for client in clients %}
-				<li class="clients__item">
-					<a href="" class="circle">
-						<div class="circle__in">
-							<!-- begin logo -->
-							<div class="circle__logo">
-								<img src="img/{{ client.logo }}" alt="">
+			<div class="clients__in">
+				<ul class="clients__list js-clients">
+					{% for client in clients %}
+					<li class="clients__item">
+						<a href="" class="circle">
+							<div class="circle__in">
+								<!-- begin logo -->
+								<div class="circle__logo">
+									<img src="img/{{ client.logo }}" alt="">
+								</div>
+								<!-- end logo -->
+								<!-- begin tooltip -->
+								<div class="circle__tooltip">
+									<button class="btn btn_ts">Посмотреть отзыв</button>
+									<!-- <p>{{ client.name }}</p> -->
+								</div>
+								<!-- end tooltip -->
 							</div>
-							<!-- end logo -->
-							<!-- begin tooltip -->
-							<div class="circle__tooltip">
-								<p>{{ client.name }}</p>
-							</div>
-							<!-- end tooltip -->
-						</div>
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+				<!-- begin buttons -->
+				<button class="clients__arr clients__arr_prev js-clients-prev">
+					{{ mixins.icon('arrow') }}
+				</button>
+				<button class="clients__arr clients__arr_next js-clients-next">
+					{{ mixins.icon('arrow') }}
+				</button>
+				<!-- end buttons -->
+			</div>
 		</div>
 	</div>
 </section>

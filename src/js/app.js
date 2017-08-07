@@ -1,6 +1,7 @@
 import sayHello from './lib/sayHello.js';
 import 'slick-carousel';
-import 'jquery-parallax.js';
+// import 'jquery-parallax.js';
+import Parallax from 'scroll-parallax';
 
 
 import './ripple.js';
@@ -43,7 +44,23 @@ $(document).ready(function() {
 		infinite: true
 	});
 
-	$('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});
+	$('.js-clients').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		infinite: true,
+		prevArrow: $('.js-clients-prev'),
+		nextArrow: $('.js-clients-next')
+	});
+
+	// $('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});
+	var p = new Parallax('.parallax', {
+	  offsetYBounds: 50,
+	  intensity: 30,
+	  center: 0.5,
+	  safeHeight: 0.15
+	}).init();
 
 	// $('.js-parallax-start').parallax({
 	// 	imageSrc: '/img/anykey-start.jpg',
@@ -54,7 +71,7 @@ $(document).ready(function() {
     	var h = this.getAttribute('href');
 	    if(/^#/.test(h) === true) {
 	      $('html,body').animate({
-	        scrollTop: $(h).offset().top - 60
+	        scrollTop: $(h).offset().top - 70
 	      }, 1500);
 	    }
   	});
@@ -63,22 +80,26 @@ $(document).ready(function() {
 });
 
 // header fixed
-// var height = $(window).height();
+var height = $(window).height();
+var headerHeight = $('.header').height();
+var sum = height + headerHeight + 10;
 
-// $(window).on('scroll', function() {
+$(window).on('scroll', function() {
 
-//   if($(window).scrollTop() > height && !$('.header').hasClass('is-fixed')) {
-//     // $('.header').css({
-//     //     backgroundColor: 'rgba(255,255,255,1)'
-//     // });
-//     $('.header').addClass('is-fixed');
-//   }
-//   if($(window).scrollTop() < height && $('.header').hasClass('is-fixed')) {
-//     // $('.header').css({
-//     //     backgroundColor: 'transparent'
-//     // });
+  if($(window).scrollTop() > sum && !$('.header').hasClass('is-fixed')) {
+    setTimeout(function() {
+    	$('.header').addClass('is-fixed');
+    	setTimeout(function() {
+    		$('.header').addClass('is-animated');
+    	}, 50)
+    },20)
+    
+  }
+  if($(window).scrollTop() < height && $('.header').hasClass('is-fixed')) {
+    $('.header').removeClass('is-fixed');
+    setTimeout(function() {
+    	$('.header').removeClass('is-animated');
+    }, 50)
+  }
 
-//     $('.header').removeClass('is-fixed');
-//   }
-
-// });
+});

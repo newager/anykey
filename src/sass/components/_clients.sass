@@ -1,29 +1,63 @@
 .clients
 	background: linear-gradient(to right, #be93c5, #7bc6cc)
 	padding-bottom: 50px
-	&__list
-		display: flex
-		justify-content: space-between
+	&__in
+		position: relative
+		
+	&__arr
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		width: 35px
+		height: 35px
+		z-index: 100
+		background-color: transparent
+		+trans
+		.icon-arrow
+			font-size: 48px
+			fill: $white
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
+		&_prev
+			left: -35px
+			.icon-arrow
+				transform: translate(-50%, -50%) rotate(90deg)
+			&:hover
+				transform: translate(-4px, -50%)
+		&_next
+			right: -35px
+			.icon-arrow
+				transform: translate(-50%, -50%) rotate(-90deg)
+			&:hover
+				transform: translate(4px, -50%)
 	&__item
 		width: 150px
+		padding: 15px 0
 .circle
 	width: 150px
 	height: 150px
+	margin: 0 auto
 	background-color: #fff
 	border-radius: 50%
 	border: 1px solid $gray-border
 	box-shadow: 0 8px 30px rgba(0,0,0,.1)
-	+trans
+	+trans(.4s)
 	+vertical
 	position: relative
 	text-decoration: none
 	display: block
 	color: $violet
 	&:hover
-		transform: scale(1.1)
+		transform: rotate3d(0,2,0,180deg)
+		.circle__logo
+			opacity: 0
 		.circle__tooltip
-			transform: translateY(0)
 			opacity: 1
+			color: transparentize($violet, .3)
+			
 
 	&__in
 		font-size: 14px
@@ -33,22 +67,28 @@
 	&__logo
 		width: 125px
 		margin: 0 auto
-		position: relative
+		+vcenter
 		z-index: 1
+		+trans(.3s)
 		img
 			max-width: 80%
 			+vcenter
 	&__tooltip
-		position: absolute
-		z-index: -1
-		top: 100%
 		width: 125px
-		padding: 10px 0
+		padding: 15px 0 10px
 		text-align: center
+		display: inline-block
+		vertical-align: middle
 		font-weight: 600
-		+trans
-		transform: translateY(-10px)
+		+trans(.3s)
 		opacity: 0
+		transform: rotate3d(0,2,0,180deg)
+		.btn
+			padding: 5px
+			line-height: 1.5
+			font-size: 16px
+			font-weight: 600
+
 		
 		
 		
