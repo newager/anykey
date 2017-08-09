@@ -31,11 +31,11 @@
           <div class="header__logo"> <img src="img/anykey-logo.svg" alt="" class="logo"> </div>
           <nav class="header__nav js-nav">
             <ul class="nav js-nav-dropdown">
-              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#top">Главная</a></li>
-              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#erp">ERP</a></li>
-              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#work">Как мы работаем</a></li>
-              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#prices">Цены</a></li>
-              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#contacts">Контакты</a></li>
+              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="/index.html">Главная</a></li>
+              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#erp" class="js-lowered">ERP</a></li>
+              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="#work" class="js-lowered">Как мы работаем</a></li>
+              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="/services.html">Цены</a></li>
+              <li class="nav__item js-ripple" data-ripple-color="rgba(255, 255, 255, 0.1)"><a href="/index.html#contacts" class="js-lowered">Контакты</a></li>
             </ul>
             <div class="header__icon"> <button class="btn btn_ts nav-toggle js-nav-toggle">
 				<span></span>
@@ -303,7 +303,7 @@
                 <div class="quote">
                   <div class="quote__photo"> <img src="img/photo-1.jpg" alt=""> </div>
                   <div class="quote__in">
-                    <div class="quote__text"> <q>Мы дадим Вам инструмент, и научим пользоваться.</q> </div>
+                    <div class="quote__text"> <q>Мы дадим Вам инструмент, и научим им пользоваться.</q> </div>
                     <div class="quote__author"> <svg class="icon icon-person"><use xlink:href="img/sprite.svg#icon-person"></use></svg>
                       <div class="quote__name">Влад Оснач</div>
                       <div class="quote__pos">Системный администратор</div>
@@ -313,130 +313,7 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section price" id="prices">
-          <div class="section__in">
-            <div class="l">
-              <!-- begin section title -->
-              <div class="section__title">
-                <h2>Тарифные планы на обслуживание офиса</h2>
-              </div>
-              <!-- end section title -->
-              <ul class="price__list">
-                <li class="price__pack">
-                  <div class="block block_shadow">
-                    <!-- begin title -->
-                    <div class="block__title">
-                      <h3>Базовый пакет</h2>
-                    </div>
-                    <!-- end title -->
-                    <!-- begin in -->
-                    <div class="block__in">
-                      <!-- begin pack price -->
-                      <div class="price__current"> <span class="large">190</span> грн/за ПК в месяц </div>
-                      <div class="price__prev">270 грн/за ПК в месяц</div>
-                      <!-- end pack price -->
-                      <!-- begin perks -->
-                      <ul class="price__perks">
-                        <li>Техническая поддержка 24/7/365</li>
-                        <li>Время реакции на заявку 15 мин</li>
-                        <li>Удаленная поддержка</li>
-                        <li>Ежемесячный плановый выезд</li>
-                        <li>Мониторинг и предотвращение поломок Real-time</li>
-                        <li>Скорость решения заявки от 1 до 6 часов</li>
-                      </ul>
-                      <!-- end perks -->
-                      <!-- begin button -->
-                      <div class="price__btn"> <a href="#!" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0, 0, 0, 0.1)">Подать заявку</a> </div>
-                      <!-- end button -->
-                      <!--begin extra -->
-                      <div class="price__extra">
-                        <p>Месяц обслуживания в подарок!</p>
-                      </div>
-                      <!--end extra -->
-                    </div>
-                    <!-- end in -->
-                  </div>
-                </li>
-                <li class="price__pack price__pack_special">
-                  <div class="block block_shadow">
-                    <!-- begin title -->
-                    <div class="block__title">
-                      <h3>Элит пакет</h2>
-                    </div>
-                    <!-- end title -->
-                    <!-- begin in -->
-                    <div class="block__in">
-                      <!-- begin pack price -->
-                      <div class="price__current"> <span class="large">360</span> грн/за ПК в месяц </div>
-                      <div class="price__prev">500 грн/за ПК в месяц</div>
-                      <!-- end pack price -->
-                      <!-- begin perks -->
-                      <ul class="price__perks">
-                        <li>Техническая поддержка 24/7/365</li>
-                        <li>Время реакции на заявку 15 мин</li>
-                        <li>Удаленная поддержка</li>
-                        <li>Ежемесячный плановый выезд</li>
-                        <li>Мониторинг и предотвращение поломок Real-time</li>
-                        <li>Бесплатный аудит и рекомендации по оптимизации техники</li>
-                        <li>Подменный фонд</li>
-                        <li>Неограниченное количество экстренных вызовов</li>
-                        <li>Скорость решения заявки от 1 до 2 часов</li>
-                      </ul>
-                      <!-- end perks -->
-                      <!-- begin button -->
-                      <div class="price__btn"> <a href="#!" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0, 0, 0, 0.1)">Подать заявку</a> </div>
-                      <!-- end button -->
-                      <!--begin extra -->
-                      <div class="price__extra">
-                        <p>Месяц обслуживания в подарок!</p>
-                      </div>
-                      <!--end extra -->
-                    </div>
-                    <!-- end in -->
-                  </div>
-                </li>
-                <li class="price__pack">
-                  <div class="block block_shadow">
-                    <!-- begin title -->
-                    <div class="block__title">
-                      <h3>Комфорт пакет</h2>
-                    </div>
-                    <!-- end title -->
-                    <!-- begin in -->
-                    <div class="block__in">
-                      <!-- begin pack price -->
-                      <div class="price__current"> <span class="large">280</span> грн/за ПК в месяц </div>
-                      <div class="price__prev">400 грн/за ПК в месяц</div>
-                      <!-- end pack price -->
-                      <!-- begin perks -->
-                      <ul class="price__perks">
-                        <li>Техническая поддержка 24/7/365</li>
-                        <li>Время реакции на заявку 15 мин</li>
-                        <li>Удаленная поддержка</li>
-                        <li>2 плановых выезда в месяц</li>
-                        <li>Мониторинг и предотвращение поломок Real-time</li>
-                        <li>Скорость решения заявки от 1 до 4 часов</li>
-                      </ul>
-                      <!-- end perks -->
-                      <!-- begin button -->
-                      <div class="price__btn"> <a href="#!" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0, 0, 0, 0.1)">Подать заявку</a> </div>
-                      <!-- end button -->
-                      <!--begin extra -->
-                      <div class="price__extra">
-                        <p>Месяц обслуживания в подарок!</p>
-                      </div>
-                      <!--end extra -->
-                    </div>
-                    <!-- end in -->
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="section clients">
-          <div class="section__in">
+          <div class="clients">
             <div class="l">
               <div class="section__title">
                 <h2>Нам доверяют свою IT инфраструктуру</h2>
@@ -573,7 +450,7 @@
                       <div class="contacts__icon"> <svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#150d3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 8h48v34H1z"/><path fill="none" d="M0 0h50v50H0z"/><path fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="2" d="M33.357 25.662l15.533 12.28M1.11 37.942l16.206-12.815"/><path d="M1.11 12.053s18.4 16.037 19.9 17.342S24.07 31 25 31s2.492-.3 3.99-1.604 19.9-17.342 19.9-17.342" fill="none" stroke="#150d3f" stroke-miterlimit="10" stroke-width="1.996"/></svg>                        </div>
                       <!-- end icon -->
                       <h3>Написать нам</h3>
-                      <p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p> <a href="#form" class="btn btn_link btn_yellow js-ripple" data-ripple-color="rgba(0,0,0,.1)">Написать сообщение</a> </div>
+                      <p>Заполнить пару строк и задать свой вопрос. Что может быть проще?</p> <button class="btn btn_yellow js-ripple js-popup-open" data-ripple-color="rgba(0,0,0,.1)" data-target-popup="form">Написать сообщение</button> </div>
                   </div>
                   <!-- end block -->
                 </div>
@@ -608,11 +485,15 @@
               <!-- end in -->
             </div>
           </div>
-          <div class="form" id="form">
-            <div class="l">
-              <div class="section__title">
-                <h2>Заполните форму и мы обязательно с Вами свяжемся</h2>
-              </div>
+        </section>
+        <!-- </div> -->
+        <!-- begin popup -->
+        <div class="popup" data-popup="form">
+          <div class="popup__overlay js-popup-close"></div>
+          <div class="popup__box js-popup"> <button class="btn btn_ts popup__close js-popup-close">
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+</button>
+            <div class="form">
               <div class="block">
                 <div class="block__title">
                   <h3>Форма обратной связи</h3>
@@ -638,8 +519,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- </div> -->
+        </div>
+        <!-- end popup -->
       </div>
     </div>
     <!-- END content -->

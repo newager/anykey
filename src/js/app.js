@@ -7,6 +7,7 @@ import Parallax from 'scroll-parallax';
 import './ripple.js';
 import './tabs.js';
 import './pie.js';
+import './popup.js';
 
 
 
@@ -70,9 +71,17 @@ $(document).ready(function() {
 	$('a').on('click', function() {
     	var h = this.getAttribute('href');
 	    if(/^#/.test(h) === true) {
-	      $('html,body').animate({
-	        scrollTop: $(h).offset().top - 70
-	      }, 1500);
+	    	if ($(this).hasClass('js-lowered')) {
+	    		$('html,body').animate({
+			    	scrollTop: $(h).offset().top - $('.header').height() * 1.9
+			    }, 1500);
+	    	}
+	    	else {
+	    		$('html,body').animate({
+		       		scrollTop: $(h).offset().top - $('.header').height()
+		     	}, 1500);
+	    	}
+		      
 	    }
   	});
 
