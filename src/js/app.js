@@ -1,13 +1,14 @@
 import sayHello from './lib/sayHello.js';
 import 'slick-carousel';
-// import 'jquery-parallax.js';
-import Parallax from 'scroll-parallax';
+import 'jquery-parallax.js';
+// import Parallax from 'scroll-parallax';
 
 
 import './ripple.js';
 import './tabs.js';
 import './pie.js';
 import './popup.js';
+import './map.js';
 
 
 
@@ -55,13 +56,14 @@ $(document).ready(function() {
 		nextArrow: $('.js-clients-next')
 	});
 
-	// $('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});
-	var p = new Parallax('.parallax', {
-	  offsetYBounds: 50,
-	  intensity: 30,
-	  center: 0.5,
-	  safeHeight: 0.15
-	}).init();
+	$('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});
+	
+	// var p = new Parallax('.parallax', {
+	//   offsetYBounds: 50,
+	//   intensity: 30,
+	//   center: 0.5,
+	//   safeHeight: 0.15
+	// }).init();
 
 	// $('.js-parallax-start').parallax({
 	// 	imageSrc: '/img/anykey-start.jpg',
@@ -71,16 +73,35 @@ $(document).ready(function() {
 	$('a').on('click', function() {
     	var h = this.getAttribute('href');
 	    if(/^#/.test(h) === true) {
-	    	if ($(this).hasClass('js-lowered')) {
+	    	if ($(this).hasClass('js-start-anchor')) {
 	    		$('html,body').animate({
-			    	scrollTop: $(h).offset().top - $('.header').height() * 1.9
+			    	scrollTop: $(h).offset().top - $('.header').height()
 			    }, 1500);
 	    	}
 	    	else {
 	    		$('html,body').animate({
-		       		scrollTop: $(h).offset().top - $('.header').height()
-		     	}, 1500);
+					scrollTop: $(h).offset().top - 120
+				}, 1500);
 	    	}
+	   //  	else if ($(this).hasClass('js-topscroll')) {
+				// $('html,body').animate({
+			 //    	scrollTop: $(h).offset().top - $('.header').height() + 5
+			 //    }, 1500);
+			 //    $(this).removeClass('js-topscroll');
+	   //  	}
+	   //  	else if ($(this).hasClass('js-specialscroll')) {
+				// $('html,body').animate({
+			 //    	scrollTop: $(h).offset().top - $('.header').height() + 5
+			 //    }, 1500);
+	   //  	}
+	   //  	else {
+	   //  		$('html,body').animate({
+		  //      		scrollTop: $(h).offset().top - $('.header').height() - 45
+		  //    	}, 1500);
+		  //    	$(this).addClass('js-topscroll');
+	   //  	}
+
+			
 		      
 	    }
   	});

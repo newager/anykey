@@ -5,6 +5,7 @@
 	background-color: transparent
 	//+image('anykey-start.jpg')
 	+cover
+
 	&__in
 		+vcenter
 		min-width: 80%
@@ -13,6 +14,8 @@
 		font-size: 48px
 		color: $violet
 		padding: 10vh 0
+		+r($md)
+			font-size: 36px
 		&_white
 			color: $white
 	&__btn
@@ -24,5 +27,7 @@
 		.icon-arrow
 			font-size: 72px
 			fill: $white
+			+r($md)
+				font-size: 54px
 		
 		

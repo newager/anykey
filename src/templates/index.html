@@ -9,18 +9,25 @@ title: Anykey | anykey.in.ua
 	
 		{% include "partials/_start.html" %}
 		{% include "partials/_header.html" %}
-		<!-- <div class="gradient-bg"> -->
+
+		<div class="js-parallax">
 			{% include "partials/_bms.html" %}
+		</div>
+
+		<div class="js-parallax">
 			{% include "partials/_adv.html" %}
-		<!-- </div> -->
-		
 			{% include "partials/_uni.html" %}
-		<!-- <div class="gradient-bg-reverse"> -->
+		</div>
+		
+		<div class="js-parallax">
 			{% include "partials/_work.html" %}
-			
 			{% include "partials/_contacts.html" %}
-			
-		<!-- </div> -->
+		</div>
+
+
+		<div class="map">
+			<div class="map__canvas" id="map"></div>
+		</div>
 
 		<!-- begin popup -->
 		<div class="popup" data-popup="form">

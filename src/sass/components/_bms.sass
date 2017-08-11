@@ -5,15 +5,20 @@
 		flex-wrap: wrap
 	&__block
 		width: 24%
+		+r($md)
+			width: 48%
+			margin-bottom: 30px
 		.block
 			height: 100%
 	&__logo
 		width: 90%
 		min-height: 50px
+
 		margin: 0 auto
 		position: relative
 		img
 			max-width: 100%
+			max-height: 80px
 			+vcenter
 			display: block
 	h3

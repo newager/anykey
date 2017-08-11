@@ -4,22 +4,21 @@
 	background-repeat: no-repeat
 	background-position: 50% 50%
 	background-size: cover
+	+r($md)
+		background-position: 70% 70%
 .l
 	max-width: 1170px
 	margin: 0 auto
 	padding: 0 50px
 .out
-	//background-color: $white
 	margin-bottom: 300px
 	box-shadow: 0 6px 30px rgba(0,0,0,.3)
 	position: relative
-	background-repeat: repeat-y
-	background-position: 0 50%
-	background-size: contain
 	&:before
 		content: ""
 		+coverdiv
 		background-color: $white
+		z-index: -200
 .in
 	position: relative
 	z-index: 1
