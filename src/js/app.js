@@ -53,7 +53,35 @@ $(document).ready(function() {
 		arrows: true,
 		infinite: true,
 		prevArrow: $('.js-clients-prev'),
-		nextArrow: $('.js-clients-next')
+		nextArrow: $('.js-clients-next'),
+		responsive: [
+		    {
+		      breakpoint: 1092,
+		      settings: {
+		        slidesToShow: 4
+		      }
+		    },
+		    {
+		      breakpoint: 800,
+		      settings: {
+		        slidesToShow: 3
+		      }
+		    },
+		    {
+		      breakpoint: 620,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 450,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
 	});
 
 	$('.js-parallax').parallax({imageSrc: '/img/vpn-bg.png'});

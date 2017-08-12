@@ -5,6 +5,8 @@
 		width: 80%
 		margin: 0 auto
 		filter: drop-shadow(0 5px 10px rgba(0,0,0,.2))
+		+r($sm)
+			width: 60%
 		path
 			+trans
 		path:hover
@@ -13,6 +15,7 @@
 .legend
 	font-size: 0
 	padding-top: 40px
+	text-align: left
 	li
 		width: 48%
 		position: relative
@@ -25,6 +28,8 @@
 			font-weight: 600
 		span
 			font-size: 14px
+			+r($sm)
+				font-size: 12px
 		div
 			display: block
 			position: absolute
