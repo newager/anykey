@@ -7,6 +7,7 @@
     z-index: 2000
     display: none
     +vertical
+
     &__close
         display: block
         position: absolute
@@ -15,6 +16,12 @@
         .icon-close
             font-size: 36px
             fill: #fff
+        +r($sm)
+            top: 1%
+            right: 1%
+            .icon-close
+                fill: $violet
+                font-size: 32px
     &__overlay
         position: absolute
         top: 0
@@ -32,6 +39,9 @@
         z-index: 2
         display: inline-block
         vertical-align: middle
-        
+        +r($sm)
+            width: 100%
+            min-height: 100%
+            top: 4%
         // transform: translate(-50%, -50%)
         

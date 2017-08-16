@@ -26,6 +26,14 @@ $(document).ready(function() {
 			
 	});
 
+	$('.js-nav-link').on('click', function(e) {
+		if ($('.js-nav-dropdown').hasClass('is-active')) {
+			$('.js-nav-dropdown').removeClass('is-active');
+			$('.js-nav-toggle').removeClass('is-open');
+		}
+
+	})
+
 	$('.js-adv').slick({
 		autoplay: true,
 		slidesToShow: 1,
@@ -113,7 +121,7 @@ $(document).ready(function() {
 // header fixed
 var height = $(window).height();
 var headerHeight = $('.header').height();
-var sum = height + headerHeight + 10;
+var sum = height + headerHeight - 10;
 
 $(window).on('scroll', function() {
 

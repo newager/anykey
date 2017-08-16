@@ -3,9 +3,10 @@ $height: 70px
 .header
 	background: linear-gradient(to right, #41295a, #2f0743)
 	padding: 0 20px
-	height: $height
+	height: 70px
 	display: flex
-	
+	+r($sm)
+		height: 45px
 	&.is-fixed
 		position: fixed
 		top: 0
@@ -21,11 +22,14 @@ $height: 70px
 		width: 25%
 		margin: auto 0
 		img
-			height: $height * 0.6
+			height: 70px * 0.6
 			display: block
+			+r($sm)
+				height: 45px * 0.6
 	&__nav
 		width: 75%
 		position: relative
+		height: 100%
 	&__icon
 		display: none
 		height: 100%
@@ -46,9 +50,13 @@ $height: 70px
 			height: 100vh
 			right: -20px
 			position: absolute
-			top: $height
+			top: 70px
 			background-color: transparentize($violet, .1)
 			text-align: center
+			z-index: 1000
+	+r($sm)
+		&.is-active
+			top: 45px
 	&__item
 		position: relative
 		overflow: hidden
@@ -72,6 +80,9 @@ $height: 70px
 	transform: translate(0, -50%)
 	width: 40px
 	height: 28px
+	+r($sm)
+		height: 20px
+		width: 36px
 	span
 		display: block
 		width: 100%
@@ -80,25 +91,36 @@ $height: 70px
 		+trans
 		position: absolute
 		background-color: transparentize($white, .2)
+		+r($sm)
+			height: 2px
 	span:nth-child(1)
 		top: 0
 		transform-origin: left center
 	span:nth-child(2)
 		top: 12px
 		transform-origin: left center
+		+r($sm)
+			top: 8px
 	span:nth-child(3)
 		top: 24px
 		transform-origin: left center
+		+r($sm)
+			top: 16px
+
 	&.is-open
 		span:nth-child(1)
 			transform: rotate(45deg)
 			top: -2px
+
 		span:nth-child(2)
 			width: 0
 			opacity: 0
 		span:nth-child(3)
 			transform: rotate(-45deg)
 			top: 26px
+			+r($sm)
+				top: 20px
+
 			
 
 			

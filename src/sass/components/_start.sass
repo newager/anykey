@@ -5,6 +5,11 @@
 	background-color: transparent
 	//+image('anykey-start.jpg')
 	+cover
+	&:before
+		content: ""
+		+coverdiv
+		z-index: -1
+		background-color: $white
 
 	&__in
 		+vcenter

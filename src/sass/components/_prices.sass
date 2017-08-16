@@ -1,4 +1,6 @@
 .price
+	+r($sm)
+		background-color: $white
 	&__list
 		+justify
 	&__pack
@@ -9,9 +11,13 @@
 		display: inline-block
 		vertical-align: top
 		margin-top: 20px
+		+r($md)
+			width: 100%
 		&_special
 			width: 34%
 			margin-top: 0
+			+r($md)
+				margin-top: 20px
 			.block
 				background-color: transparentize($violet, .2)
 				color: #fff
