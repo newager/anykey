@@ -47,7 +47,7 @@ $height: 70px
 			display: block
 			height: auto
 			width: 100vw
-			height: 100vh
+			min-height: 100vh
 			right: -20px
 			position: absolute
 			top: 70px
@@ -57,6 +57,7 @@ $height: 70px
 	+r($sm)
 		&.is-active
 			top: 45px
+
 	&__item
 		position: relative
 		overflow: hidden
@@ -71,6 +72,9 @@ $height: 70px
 			padding: 0 20px
 			line-height: $height
 			+trans
+			+rh(350)
+				line-height: 40px
+				font-size: 14px
 			&:hover
 				color: $yellow
 .nav-toggle

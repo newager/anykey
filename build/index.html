@@ -504,22 +504,25 @@
                   <h3>Форма обратной связи</h3>
                 </div>
                 <div class="form__in">
-                  <form action="">
+                  <form action="https://formspree.io/olha.yev@gmail.com" id="contact-form" method="post">
                     <!-- begin input -->
-                    <div class="input"> <input type="text"> <label for="">Имя</label> </div>
+                    <div class="input"> <input type="text" name="name" placeholder="Имя"> </div>
                     <!-- end input -->
                     <!-- begin input -->
-                    <div class="input"> <input type="email"> <label for="">E-mail</label> </div>
+                    <div class="input"> <input type="email" name="email" placeholder="E-mail"> </div>
                     <!-- end input -->
                     <!-- begin input -->
-                    <div class="input"> <input type="tel"> <label for="">Телефон</label> </div>
+                    <div class="input"> <input type="tel" name="phone" placeholder="Телефон"> </div>
                     <!-- end input -->
                     <!-- begin input -->
-                    <div class="input"> <textarea></textarea> <label for="">Сообщение</label> </div>
+                    <div class="input"> <textarea name="message" placeholder="Сообщение"></textarea> </div>
                     <!-- end input -->
                     <!-- begin submit --><button class="btn btn_yellow js-ripple" data-ripple-color="rgba(0,0,0,.3)">Отправить</button>
                     <!-- end submit -->
                   </form>
+                  <div class="form__success js-form-success">
+                    <p>Сообщение отправлено!</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -536,11 +539,11 @@
         <!-- end logo -->
         <!-- begin menu -->
         <ul class="footer__nav">
-          <li><a href="">Главная</a></li>
-          <li><a href="">ERP</a></li>
-          <li><a href="">Как мы работаем</a></li>
-          <li><a href="">Цены</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/index.html#erp">ERP</a></li>
+          <li><a href="/index.html#work">Как мы работаем</a></li>
+          <li><a href="/services.html">Цены</a></li>
+          <li><a href="/index.html#contacts">Контакты</a></li>
         </ul>
         <!-- end menu -->
         <!-- begin copyright -->
